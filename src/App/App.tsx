@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './App.sass';
 
 export default class Counter extends React.Component {
   state = {
@@ -20,7 +20,7 @@ export default class Counter extends React.Component {
 
   render () {
     return (
-      <div>
+      <div className='app-wrapper'>
         <h1>{this.state.count}</h1>
         <button onClick={this.increment}>Increment</button>
         <button onClick={this.decrement}>Decrement</button>
